@@ -1,0 +1,89 @@
+﻿<Page
+    x:Class="SmartRoom.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SmartRoom"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid x:ConnectionId='1' x:Name="LayoutRoot" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1.5*"/>
+            <RowDefinition Height="8*"/>
+            <RowDefinition Height="1.5*"/>
+        </Grid.RowDefinitions>
+        <Grid x:ConnectionId='2' x:Name="TopSettingLayout" Grid.Row="0" Grid.Column="0" BorderBrush="DodgerBlue" BorderThickness="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Row="0" Grid.Column="0" Text="SmartRoom" HorizontalAlignment="Left" VerticalAlignment="Center" FontWeight="Bold" Margin="15 0 0 0" FontSize="50"/>
+            <Image Grid.Row="0" Grid.Column="1" Source="/Assets/logo.jpg" Width="250" Height="100" HorizontalAlignment="Right"/>
+        </Grid>
+        <Grid x:ConnectionId='3' x:Name="SettingMenu" Grid.Row="1" Grid.Column="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="8*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Grid x:ConnectionId='7' x:Name="SettingContent" Grid.Column="1" Grid.Row="1">
+                <Grid x:ConnectionId='14' x:Name="BaseSetting" Grid.Row="0" Grid.Column="0">
+                    <TextBlock Grid.Column="0" Grid.Row="0" Text="Base Setting" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Grid>
+                <Grid x:ConnectionId='15' x:Name="GroupwareInformation" Grid.Row="0" Grid.Column="0">
+                    <TextBlock Grid.Column="0" Grid.Row="0" Text="GroupwareInformation Setting" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Grid>
+                <Grid x:ConnectionId='16' x:Name="MeetingSetting" Grid.Row="0" Grid.Column="0">
+                    <TextBlock Grid.Column="0" Grid.Row="0" Text="Meeting Setting" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Grid>
+                <Grid x:ConnectionId='17' x:Name="IndividualSetting" Grid.Row="0" Grid.Column="0">
+                    <TextBlock Grid.Column="0" Grid.Row="0" Text="Individual Setting" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Grid>
+                <Grid x:ConnectionId='18' x:Name="SuportSetting" Grid.Row="0" Grid.Column="0">
+                    <TextBlock Grid.Column="0" Grid.Row="0" Text="Suport Setting" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Grid>
+            </Grid>
+            <Grid x:ConnectionId='8' x:Name="SettingMenuButton" Grid.Column="0" Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Border Grid.Row="0" Grid.Column="0" CornerRadius="0 0 0 5">
+                    <Button x:ConnectionId='13' Name="btnBaseSetting" Grid.Row="0" Grid.Column="0" Background="Gray" Content="Base Setting" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"                             />
+                </Border>
+                <Border Grid.Row="1" Grid.Column="0" CornerRadius="0 0 0 5">
+                    <Button x:ConnectionId='12' Grid.Row="1" Grid.Column="0" Background="Gray" Content="Groupware Information" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"                                      />
+                </Border>
+                <Border Grid.Row="2" Grid.Column="0" CornerRadius="0 0 0 5">
+                    <Button x:ConnectionId='11' Grid.Row="2" Grid.Column="0" Background="Gray" Content="Meeting Information" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"                                    />
+                </Border>
+                <Border Grid.Row="3" Grid.Column="0" CornerRadius="0 0 0 5">
+                    <Button x:ConnectionId='10' Grid.Row="3" Grid.Column="0" Background="Gray" Content="Invididual Setting" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"                                   />
+                </Border>
+                <Border Grid.Row="4" Grid.Column="0" CornerRadius="0 0 0 5">
+                    <Button x:ConnectionId='9' Grid.Row="4" Grid.Column="0" Background="Gray" Content="Support Setting" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"                                />
+                </Border>                                          
+            </Grid>
+        </Grid>
+        <Grid x:ConnectionId='4' x:Name="BottomSettingLayout" Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <TextBlock Text="13:00 Chủ nhật, 08/04/2018"  VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Column="0" Margin="25 0 0 0" />
+            <Grid Grid.Row="0" Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Button x:ConnectionId='5' Name="btnSave" Grid.Column="0" Content="Save" Background="Aqua" Width="Auto" Height="Auto" Padding="0 15 0 15" BorderBrush="AliceBlue" BorderThickness="2" HorizontalAlignment="Stretch" Margin="25"/>
+                <Button x:ConnectionId='6' Name="btnCancel" Grid.Column="1" Content="Cancel" Background="Aqua" Width="Auto" Height="Auto" Padding="0 15 0 15" BorderBrush="AliceBlue" BorderThickness="2" HorizontalAlignment="Stretch" Margin="25"/>
+            </Grid>
+        </Grid>
+    </Grid>
+</Page>
+
